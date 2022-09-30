@@ -2,7 +2,10 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-import props from './src/config/properties.js';
+import props from './config/properties.js';
+import connectDB from './config/db.js';
+
+connectDB();
 
 const app = express();
 
