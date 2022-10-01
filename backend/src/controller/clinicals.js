@@ -1,7 +1,7 @@
 import dao from '../dao/clinicals.js';
 import mongodb from 'mongodb';
 
-export default patientController = {
+export default {
   get: (req, res) =>
     dao.get(
       { patient: mongodb.ObjectID(req.params.patientId) },

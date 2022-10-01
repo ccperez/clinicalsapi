@@ -1,6 +1,6 @@
 import dao from '../dao/patient.js';
 
-export default patientController = {
+export default {
   get: (req, res) => {
     dao.get({}, (err, patients) => res.send(patients));
   },
